@@ -21,6 +21,7 @@ $(document).ready(function() {
         clearInterval(interval);
         interval = setInterval(startTimer, 10);
         $(".timer-background").css("background-color", "forestgreen");
+        $(".timer-background").css("color", "black");
         timerOpacity = setInterval(toggleOpacity, 1200);
     });
 
@@ -28,6 +29,7 @@ $(document).ready(function() {
         clearInterval(interval);
         if ($(timer).text() != "00:00") {
             $(".timer-background").css("background-color", "darkred");
+            $(".timer-background").css("color", "white");
             $(".timer-background").css("opacity", "1");
         }
     });
@@ -39,6 +41,7 @@ $(document).ready(function() {
         $appendTens.text(tens);
         $appendSeconds.text(seconds);
         $(".timer-background").css("background-color", "gold");
+        $(".timer-background").css("color", "black");
         $(".timer-background").css("opacity", "1");
     });
 
